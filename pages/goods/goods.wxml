@@ -1,0 +1,14 @@
+<scroll-view scroll-y="true" style="background: '#F5F5F5';height: 1200px"scroll-with-animation="true" >
+<view class="table">
+  <block wx:for="{{listData}}" wx:key="{{code}}">
+    <view class="tr">
+      <image class="photos" src='/img/store.png' > </image> 
+     <text class='phones'>商品名称</text> 
+    </view>
+     <view class="tr2">
+      <image class="photos" src='/img/store.png' > </image> 
+     <text class='phones'>商品名称</text> 
+    </view>
+  </block>
+</view>
+</scroll-view>

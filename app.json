@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/store/store",
+    "pages/goods/goods",
+    "pages/me/me",
+    "pages/tools/toolHome",
+    "pages/goods/goodsDetail/goods_detail",
+    "pages/me/order/order",
+    "pages/store/storeDetail/store_detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF7F50",
+    "navigationBarTitleText": "小程序",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "color": "#708090",
+    "backgroundColor": "#eeeeee",
+    "selectedColor": "#FF7F50",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/home.png",
+        "selectedIconPath": "img/home_selected.png"
+      },
+      {
+        "pagePath": "pages/store/store",
+        "text": "商店",
+        "iconPath": "img/store-item.png",
+        "selectedIconPath": "img/store_selected.png"
+      },
+      {
+        "pagePath": "pages/tools/toolHome",
+        "iconPath": "img/add.png",
+        "selectedIconPath": "img/add_selected.png",
+        "text": "添加"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "text": "发现",
+        "iconPath": "img/find.png",
+        "selectedIconPath": "img/find_selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "img/me.png",
+        "selectedIconPath": "img/me_selected.png"
+      }
+    ]
+  }
+}

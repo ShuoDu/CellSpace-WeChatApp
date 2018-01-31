@@ -1,0 +1,16 @@
+<!--垂直滚动，这里必须设置高度-->
+<scroll-view scroll-y="true" style="background: '#F5F5F5';height: 700px"scroll-with-animation="true" >
+  <view class='header'>
+    <image class='photo' src='/img/photo.jpg'></image>
+    <text class='phone'>18801114226</text>
+  </view>
+  <view class="table">
+  <block wx:for="{{listData}}" wx:key="{{code}}">
+   <navigator url="/pages/store/storeDetail/store_detail?id={{item.id}}">
+    <view class="tr">
+      <text class='td'>{{item.text}}</text>
+    </view>
+    </navigator>
+  </block>
+</view>
+</scroll-view>
