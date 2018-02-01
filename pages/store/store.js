@@ -1,17 +1,34 @@
 Page({
-  data: {
-    listData: [
-      { "code": "01", "text": "text1", "type": "type1" },
-      { "code": "02", "text": "text2", "type": "type2" },
-      { "code": "03", "text": "text3", "type": "type3" },
-      { "code": "04", "text": "text4", "type": "type4" },
-      { "code": "05", "text": "text5", "type": "type5" },
-      { "code": "06", "text": "text6", "type": "type6" },
-      { "code": "07", "text": "text7", "type": "type7" }
-    ]
-  },
-  onLoad: function () {
-    console.log('onLoad')
-  }
-
+  onLoad: function (opt) {
+    console.log(opt.name)  
+    console.log('过来了')  
+    var that = this//不要漏了这句，很重要
+    wx.request({
+      url: "http://127.0.0.1:8080/store/list/",
+      data: "",
+      header: {
+        "Content-Type":"application/json"
+      },
+      success: function (res) {
+        console.log("成功啦"),
+        console.log(res.data),
+        that.setData({
+          geziList: res.data,
+          //res代表success函数的事件对，data是固定的，stories是是上面json数据中stories
+        })
+  
+      },
+      fail: function (err) {
+        console.log(err)
+      }
+    })
+  } ,
+ 
+  // meAction: function (e) {
+  //   var id = e.currentTarget.id;
+  //   console.log(id);
+  //   wx.navigateTo({
+  //     url: '/pages/store/storeDetail/store_detail',
+  //   });
+  // }
 })

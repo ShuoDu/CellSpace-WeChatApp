@@ -31,6 +31,5 @@
      <text class='goods-name'>商品名称</text> 
     </view>
   </block>
-  
 </view>
 </scroll-view>

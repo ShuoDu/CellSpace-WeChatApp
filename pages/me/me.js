@@ -10,23 +10,39 @@ Page({
   },
   onLoad: function () {
     console.log('onLoad')
+  },
+
+  meAction:function(e){
+    var id = e.currentTarget.id;
+    console.log(id);
+    switch (id) {
+      case '01':
+        wx.navigateTo({
+          url: '/pages/me/order/order',
+        }); 
+        break;
+      case '02':
+        wx.navigateTo({
+          url: '/pages/me/cellManage/ceeManage',
+        }) ;
+        break;
+      case '03':
+        wx.navigateTo({
+          url: '/pages/me/order/order',
+        });  
+        break;
+      case '04':
+        wx.navigateTo({
+          url: '/pages/me/order/order',
+        });
+        break;
+      case '05':
+        wx.navigateTo({
+          url: '/pages/me/about/aboutMe',
+        });
+        break;
+    }
+ 
   }
 
 })
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17

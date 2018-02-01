@@ -6,11 +6,11 @@
   </view>
   <view class="table">
   <block wx:for="{{listData}}" wx:key="{{code}}">
-   <navigator url="/pages/store/storeDetail/store_detail?id={{item.id}}">
-    <view class="tr">
+    <!-- <navigator url="/pages/store/storeDetail/store_detail?code={{item.code}}">  -->
+    <view class="tr" bindtap='meAction' id="{{item.code}}" data-code="{{item.code}}" > 
       <text class='td'>{{item.text}}</text>
     </view>
-    </navigator>
+     <!-- </navigator>  -->
   </block>
 </view>
 </scroll-view>

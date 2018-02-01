@@ -1,17 +1,17 @@
 <scroll-view scroll-y="true" style="background: '#F5F5F5';height: 1200px"scroll-with-animation="true" >
 <!-- <image class="lunbo" src='/img/lunbo.png' > </image>  -->
 <view class="tables">
-  <block wx:for="{{listData}}" wx:key="{{code}}">
-   <view class='cell'>
+  <block wx:for="{{geziList}}" wx:key="{{name}}">
+   <view class='cell' bindtap='meAction' id="{{item.name}}">
      <view class="tr">
-           <image class="photos" src='/img/store.png' > </image> 
+           <image class="photos" src="{{item.store_img}}"> </image> 
      </view>
      <view class='textContent'> 
-          <text class='title'>肯德基(中关村店)</text>
+          <text class='title'>{{item.name}}</text>
           <text class='content'>格子数 30 个  剩余 15 个</text>
-          <text class='goods'>红酒，玩具等</text>
+          <text class='goods'>{{item.gz_goods}}</text>
      </view>
-     <text class='price'>¥20/天/个</text>
+     <text class='price'>¥{{item.gz_price}}/天/个</text>
     </view>
   </block>
 </view>

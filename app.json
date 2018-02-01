@@ -8,7 +8,9 @@
     "pages/tools/toolHome",
     "pages/goods/goodsDetail/goods_detail",
     "pages/me/order/order",
-    "pages/store/storeDetail/store_detail"
+    "pages/store/storeDetail/store_detail",
+    "pages/me/about/aboutMe",
+    "pages/me/cellManage/ceeManage"
   ],
   "window": {
     "backgroundTextStyle": "light",
