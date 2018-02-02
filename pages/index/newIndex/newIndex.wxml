@@ -1,0 +1,6 @@
+<scroll-view scroll-y="true" style="background: '#F5F5F5';height: 2200px"scroll-with-animation="true" >
+<view class='header'>
+ <view class='store_detail'></view>
+ <view class='menu'></view> 
+</view>
+</scroll-view>

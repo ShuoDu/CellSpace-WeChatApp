@@ -24,11 +24,11 @@ Page({
     })
   } ,
  
-  // meAction: function (e) {
-  //   var id = e.currentTarget.id;
-  //   console.log(id);
-  //   wx.navigateTo({
-  //     url: '/pages/store/storeDetail/store_detail',
-  //   });
-  // }
+  meAction: function (e) {
+    var id = e.currentTarget.id;
+    console.log(id);
+    wx.navigateTo({
+      url: '/pages/store/storeContent/storeContent',
+    });
+  }
 })

@@ -1,5 +1,13 @@
 <scroll-view scroll-y="true" style="background: '#F5F5F5';height: 2200px"scroll-with-animation="true" >
 <image class="lunbo" src='/img/lunbo.png' > </image> 
+<view class='menu'>
+<block wx:for="{{menuData}}" wx:key="{{code}}">
+  <view class='menus_back' bindtap='menuAction' id="{{item.code}}">
+     <image class='menu_img' src='{{item.img}}' ></image>
+     <text class='menu_text'>{{item.text}}</text>
+  </view>
+  </block>
+</view>
 <text class='header-title'>-- 人气店铺 --</text>
 <view class="tables">
   <block wx:for="{{listData}}" wx:key="{{code}}">

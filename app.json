@@ -10,7 +10,9 @@
     "pages/me/order/order",
     "pages/store/storeDetail/store_detail",
     "pages/me/about/aboutMe",
-    "pages/me/cellManage/ceeManage"
+    "pages/me/cellManage/ceeManage",
+    "pages/index/newIndex/newIndex",
+    "pages/store/storeContent/storeContent"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -30,24 +32,6 @@
         "text": "首页",
         "iconPath": "img/home.png",
         "selectedIconPath": "img/home_selected.png"
-      },
-      {
-        "pagePath": "pages/store/store",
-        "text": "商店",
-        "iconPath": "img/store-item.png",
-        "selectedIconPath": "img/store_selected.png"
-      },
-      {
-        "pagePath": "pages/tools/toolHome",
-        "iconPath": "img/add.png",
-        "selectedIconPath": "img/add_selected.png",
-        "text": "添加"
-      },
-      {
-        "pagePath": "pages/goods/goods",
-        "text": "发现",
-        "iconPath": "img/find.png",
-        "selectedIconPath": "img/find_selected.png"
       },
       {
         "pagePath": "pages/me/me",

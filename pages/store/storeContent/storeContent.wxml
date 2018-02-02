@@ -1,0 +1,31 @@
+<scroll-view scroll-y="true" class='scroll_back' scroll-with-animation="true" >
+
+<view class='header'>
+     <image class="photos" src='/img/store.png' > </image> 
+     <view class='textContent'> 
+          <text class='title'>肯德基(中关村店)</text>
+          <text class='goods'>配送范围：5公里 | 10元起送</text>
+          <text class='goods'>商品：盖饭,拉面,小吃,饮料等</text>
+     </view>
+</view>
+
+<view class='menu'>
+ <block wx:for="{{menuData}}" wx:key="{{code}}">
+   <view class='menus_back' bindtap='menuAction' id="{{item.code}}">
+     <image class='menu_img' src='{{item.img}}' ></image>
+     <text class='menu_text'>{{item.text}}</text>
+  </view>
+</block>
+  </view>
+    <view class='store_message'>
+     <view class='store_message_one'>
+     <text class='text_one'>商家信息</text>
+    </view>
+    <block wx:for="{{storeData}}" wx:key="{{code}}">
+    <view class='store_message_con'>
+      <text class='store_title'>{{item.title}}</text>
+      <text class='store_time'>{{item.content}}</text>
+    </view>
+    </block>
+</view> 
+</scroll-view>
