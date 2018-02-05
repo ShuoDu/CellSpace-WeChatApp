@@ -91,3 +91,49 @@ color: white;
 margin-left:10px;
 line-height:24px; 
 }
+.kuaidi{
+  height:85px;
+  background:white; 
+  margin-top:5px; 
+}
+.kuaidiTitle{
+  font-size:13px;
+  color: orange; 
+  margin-left:22px;
+}
+.huoDongOne{
+  font-size:13px;
+  color: red; 
+  margin-left:22px;
+}
+.huoDongTwo{
+  font-size:13px;
+  color: green; 
+  margin-left:22px;
+}
+.activity{
+  height:128px;
+  background:white; 
+  margin-top:5px; 
+  flex-direction:row;
+  align-items: center;
+}
+.payBack{
+ height:50px;
+ background:white; 
+ border-bottom: 1px solid #efefef;  
+ flex-direction:row;
+ align-items: center;
+}
+.payPhoto{
+  width: 30px;
+  height: 30px;
+  margin-left:15px;
+  padding-top:10px;
+}
+ .payText{ 
+  font-size:13px;
+  color: darkgrey; 
+  margin-left:22px; 
+  line-height:50px; 
+} 

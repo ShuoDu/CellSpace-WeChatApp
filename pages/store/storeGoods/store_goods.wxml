@@ -1,0 +1,23 @@
+<view  class='back'>
+  <scroll-view scroll-y="true" class='scroll_one' scroll-with-animation="true" >
+     <block wx:for="{{menuData}}" wx:key="{{name}}">
+       <view class='goods_menu'>
+         <text class='goods_text'>{{item.text}}</text>
+       </view>
+     </block>
+  </scroll-view>
+  <scroll-view scroll-y="true" class='scroll_two' scroll-with-animation="true" >
+    <block wx:for="{{listData}}" wx:key="{{code}}">
+     <view class='cell' bindtap='meAction' id="{{item.code}}">
+       <view class="tr">
+           <image class="photos" src="{{item.img}}"> </image> 
+       </view>
+       <view class='textContent'> 
+          <text class='title'>{{item.text}}</text>
+          <text class='content'>{{item.price}}</text>
+       </view>
+       <!-- <text class='price'>¥{{item.gz_price}}/天/个</text> -->
+    </view>
+  </block>
+  </scroll-view>
+</view>

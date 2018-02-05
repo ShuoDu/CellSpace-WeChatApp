@@ -16,6 +16,17 @@ Page({
       { "code": "02", "title": "商家电话", "content": "200-117-2289" },
       { "code": "03", "title": "商家地址", "content": "北京市海淀区海淀东路11号" },
       { "code": "04", "title": "商家环境", "content": "" },
+    ],
+    kuaidiData: [
+      { "code": "01", "title": "达达配送", "content": "准时必达，配送费¥0元起" }
+    ],
+    activityData: [
+      { "code": "01", "title": "满减", "content": "满200减5元" },
+      { "code": "01", "title": "首单", "content": "新用户下单立减1.00元(不与其他活动同享)" }
+    ],
+    payData: [
+      { "code": "01", "title": "微信支付", "content": "满200减5元" },
+      { "code": "01", "title": "支付宝支付", "content": "新用户下单立减1.00元(不与其他活动同享)" }
     ]
   
   },
@@ -25,6 +36,30 @@ Page({
    */
   onLoad: function (options) {
   
+  },
+
+  menuAction: function (e) {
+    var id = e.currentTarget.id;
+    console.log(id);
+    console.log('点过来了');
+    switch (id) {
+      case '01':
+        wx.navigateTo({
+          url: '/pages/store/storeGoods/store_goods',
+        });
+        break;
+      case '02':
+        wx.navigateTo({
+          url: '/pages/goods/goods',
+        });
+        break;
+      case '03':
+        wx.navigateTo({
+          url: '/pages/store/storeDetail/store_detail',
+        });
+        break;
+
+    }
   },
 
   /**

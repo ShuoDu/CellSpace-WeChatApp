@@ -12,7 +12,8 @@
     "pages/me/about/aboutMe",
     "pages/me/cellManage/ceeManage",
     "pages/index/newIndex/newIndex",
-    "pages/store/storeContent/storeContent"
+    "pages/store/storeContent/storeContent",
+    "pages/store/storeGoods/store_goods"
   ],
   "window": {
     "backgroundTextStyle": "light",

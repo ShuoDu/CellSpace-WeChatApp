@@ -7,7 +7,9 @@
     </view>
      <view class="tr2">
       <image class="photos" src='/img/store.png' > </image> 
-     <text class='phones'>商品名称</text> 
+      <view>
+            <text class='phones'>商品名称</text> 
+      </view>
     </view>
   </block>
 </view>

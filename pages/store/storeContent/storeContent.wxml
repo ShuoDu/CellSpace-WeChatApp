@@ -10,22 +10,63 @@
 </view>
 
 <view class='menu'>
- <block wx:for="{{menuData}}" wx:key="{{code}}">
-   <view class='menus_back' bindtap='menuAction' id="{{item.code}}">
+  <block wx:for="{{menuData}}" wx:key="{{code}}">
+    <view class='menus_back' bindtap='menuAction' id="{{item.code}}">
      <image class='menu_img' src='{{item.img}}' ></image>
      <text class='menu_text'>{{item.text}}</text>
-  </view>
-</block>
-  </view>
-    <view class='store_message'>
+   </view>
+  </block>
+</view>
+
+<view class='store_message'>
      <view class='store_message_one'>
-     <text class='text_one'>商家信息</text>
-    </view>
-    <block wx:for="{{storeData}}" wx:key="{{code}}">
-    <view class='store_message_con'>
-      <text class='store_title'>{{item.title}}</text>
-      <text class='store_time'>{{item.content}}</text>
-    </view>
+       <text class='text_one'>商家信息</text>
+     </view>
+    <block wx:for="{{storeData}}" bindtap='menuAction' id="{{item.code}}" wx:key="{{code}}">
+      <view class='store_message_con'>
+       <text class='store_title'>{{item.title}}</text>
+       <text class='store_time'>{{item.content}}</text>
+     </view>
     </block>
 </view> 
+
+<view class='kuaidi'>
+     <view class='store_message_one'>
+       <text class='text_one'>配送信息</text>
+     </view>
+    <block wx:for="{{kuaidiData}}" wx:key="{{code}}">
+      <view class='store_message_con'>
+       <text class='kuaidiTitle'>{{item.title}}</text>
+       <text class='store_time'>{{item.content}}</text>
+     </view>
+    </block>
+</view> 
+
+<view class='activity'>
+     <view class='store_message_one'>
+       <text class='text_one'>活动信息</text>
+     </view>
+    <block wx:for="{{activityData}}" wx:key="{{code}}">
+      <view class='store_message_con'>
+       <text class='huoDongOne'>{{item.title}}</text>
+       <text class='store_time'>{{item.content}}</text>
+     </view>
+    </block>
+</view> 
+
+<view class='pay'>
+     <view class='store_message_one'>
+       <text class='text_one'>支付方式</text>
+     </view>
+    <block wx:for="{{payData}}" wx:key="{{code}}">
+      <view class='payBack'>
+       <!-- <image class="payPhoto" src='/img/store.png' > </image> -->
+       <text class='payText'>{{item.title}}</text>
+     </view>
+    </block>
+</view> 
+
+
+
+
 </scroll-view>
